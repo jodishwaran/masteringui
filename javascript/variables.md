@@ -14,6 +14,8 @@ age = 10; //assign value after declartion above
 var name = "ganesh"; //declare and assign value
 ```
 
+![alt text for screen readers](./images/scopes.png "Text to show on mouseover")
+
 Notice that variables declared using _var_ keyword does not create block scope. WHen we say block we are referring code between {}. var keyword only creates global and function scope. So variables created inside any block like _if_, _for_, _while_ can be accessed outside!
 
 ```js
