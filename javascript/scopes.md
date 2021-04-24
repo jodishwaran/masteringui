@@ -47,3 +47,34 @@ function someFun() {
 
 someFun();
 ```
+
+
+
+
+
+
+
+console.clear();
+
+var madhurObj = {
+  name: "madhur",
+  hobbies: ["playing piano", "jumping", "running"],
+  printHobbies() {
+    this.hobbies.forEach((hobby) => {
+      console.log(`${this.name} is having ${hobby}`);
+    });
+  }
+};
+
+var sagarObj = {
+  name: "madhur",
+  hobbies: ["playing piano", "jumping", "running"],
+  printHobbies() {
+    this.hobbies.forEach(function (hobby) {
+      console.log(`${this.name} is having ${hobby}`);
+    });
+  }
+};
+
+// madhurObj.printHobbies();
+sagarObj.printHobbies();

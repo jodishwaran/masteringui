@@ -23,7 +23,24 @@ document.getElementsByClassName("hello")[0].innerHTML = "Hello World!";
 document.querySelector("#main").innerHTML = "Hello World!";
 document.querySelectorAll(".hello").innerHTML = "Hello World!";
 ```
+---
 
+```js
+console.clear();
+
+const wrapper = document.getElementById("app");
+
+const divEl = document.createElement("div");
+divEl.className = "box";
+divEl.innerHTML = `
+
+<p> Hello world</p>
+
+`;
+
+wrapper.append(divEl);
+```
+---
 ## Create an Element:
 
 ```html
@@ -66,3 +83,5 @@ for (const fruit of fruits) {
 }
 mainEl.append(listParentEl);
 ```
+
+
